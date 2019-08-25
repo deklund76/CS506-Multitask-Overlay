@@ -1,0 +1,32 @@
+Overlay-Unit:
+  stage: Unit-Testing
+  image: node:8
+  script:
+    - cd Overlay
+    - npm i --silent
+    - npm run unit
+  only:
+    - /^overlay$/
+#    - master
+
+#Overlay-Integration:
+#  stage: Integration
+#  image: node:8
+#  script:
+#    - cd Overlay
+#    - npm i --silent
+#    - npm run int
+#  only:
+#    - /^(overlay|hybrid)-.*$/
+#    - master
+
+#Overlay-System:
+#  stage: System
+#  image: node:8
+#  script:
+#    - cd Overlay
+#    - npm i --silent
+#    - npm run features
+#  only:
+#    - /^(overlay|hybrid)-.*$/
+#    - master

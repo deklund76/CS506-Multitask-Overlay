@@ -1,0 +1,20 @@
+{
+  "name": "Kaleidoscope",
+  "version": "1.0.1",
+  "description": "CS 506 Multi-task Overlay Project",
+  "scripts": {
+    "lint": "eslint .",
+    "gherkinLint": "gherkin-lint ./App/test/test/features ./Overlay/test/test/features"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "gherkin-lint": "^3.0.0",
+    "mousetrap": "^1.6.3"
+  },
+  "devDependencies": {
+    "eslint-plugin-import": "^2.16.0"
+  }
+}

@@ -1,0 +1,26 @@
+App-Unit:
+  stage: Unit-Testing
+  image: node:8
+  script:
+    - cd App
+    - npm i --silent
+    - npm run unit
+
+App-Integration:
+  stage: Integration
+  image: node:8
+  script:
+    - cd App
+    - npm i --silent
+    - npm run int
+
+#App-System:
+#  stage: System
+#  image: node:8
+#  script:
+#    - cd App
+#    - npm i --silent
+#    - npm run features
+#  only:
+#    - /^(app|hybrid)-.*$/
+#    - master
