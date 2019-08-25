@@ -1,0 +1,126 @@
+{
+  "presets": [
+    {
+      "_name": "CSGO",
+      "_resolution": "1920x1080",
+      "_opacity": 0.48,
+      "_gridHeight": "5",
+      "_gridWidth": "4",
+      "_gameType": "CSGO",
+      "_background": "csgo.jpg",
+      "_widgetList": [
+        {
+          "_type": "noteWidget",
+          "_left": "0.000",
+          "_top": "0.000",
+          "_height": "0.232",
+          "_width": "0.131",
+          "_src": "../images/noteIcon.png"
+        },
+        {
+          "_type": "browserWidget",
+          "_left": "0.849",
+          "_top": "0.764",
+          "_height": "0.232",
+          "_width": "0.131",
+          "_src": "../images/browserIcon.png"
+        }
+      ]
+    },
+    {
+      "_name": "LoL",
+      "_resolution": "1920x1080",
+      "_opacity": 0.5,
+      "_gridHeight": "5",
+      "_gridWidth": "4",
+      "_gameType": "LoL",
+      "_background": "lol.jpg",
+      "_widgetList": [
+        {
+          "_type": "noteWidget",
+          "_left": "0.121",
+          "_top": "0.177",
+          "_height": "0.407",
+          "_width": "0.211",
+          "_src": "../images/noteIcon.png"
+        },
+        {
+          "_type": "browserWidget",
+          "_left": "0.463",
+          "_top": "0.196",
+          "_height": "0.395",
+          "_width": "0.223",
+          "_src": "../images/browserIcon.png"
+        },
+        {
+          "_type": "browserWidget",
+          "_left": "0.844",
+          "_top": "0.385",
+          "_height": "0.232",
+          "_width": "0.131",
+          "_src": "../images/browserIcon.png"
+        }
+      ]
+    },
+    {
+      "_name": "RainbowSix",
+      "_resolution": "1920x1080",
+      "_opacity": 1,
+      "_gridHeight": "5",
+      "_gridWidth": "4",
+      "_gameType": "RainbowSix",
+      "_background": "r6siege.jpg",
+      "_widgetList": []
+    },
+    {
+      "_name": "Apex Legends",
+      "_resolution": "1920x1080",
+      "_opacity": 1,
+      "_gridHeight": "5",
+      "_gridWidth": "4",
+      "_gameType": "ApexLegends",
+      "_background": "apexLegends.jpg",
+      "_widgetList": []
+    },
+    {
+      "_name": "Dota 2",
+      "_resolution": "1920x1080",
+      "_opacity": 0.57,
+      "_gridHeight": "5",
+      "_gridWidth": "4",
+      "_gameType": "Dota2",
+      "_background": "dota2.png",
+      "_widgetList": []
+    },
+    {
+      "_name": "Fortnite",
+      "_resolution": "1920x1080",
+      "_opacity": 1,
+      "_gridHeight": "5",
+      "_gridWidth": "4",
+      "_gameType": "Fortnite",
+      "_background": "fortnite.jpg",
+      "_widgetList": []
+    },
+    {
+      "_name": "Hearthstone",
+      "_resolution": "1920x1080",
+      "_opacity": 1,
+      "_gridHeight": "5",
+      "_gridWidth": "4",
+      "_gameType": "Hearthstone",
+      "_background": "hearthstone.png",
+      "_widgetList": []
+    },
+    {
+      "_name": "Overwatch",
+      "_resolution": "1920x1080",
+      "_opacity": 1,
+      "_gridHeight": "5",
+      "_gridWidth": "4",
+      "_gameType": "Overwatch",
+      "_background": "overwatch.jpg",
+      "_widgetList": []
+    }
+  ]
+}
