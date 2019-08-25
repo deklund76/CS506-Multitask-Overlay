@@ -1,0 +1,499 @@
+body {
+  font-family: Arial;
+  color: white;
+  background-color: #343435;
+  overflow: visible;
+  height: 100%;
+  width: 100%;
+  overflow:hidden;
+}
+
+.buffer {
+  position: relative;
+  height: 10%;
+}
+
+#main-flex {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#main {
+  padding-left:2.8%;
+  padding-right:5%;
+  height: 85%;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* CSS for preset list */
+section li{
+    margin:0 0 10px;
+}
+
+p{
+    font-size:18px;
+    margin-left: 5px;
+}
+
+.wrapper{
+    overflow:hidden;
+    height: 100%;
+}
+section{
+  position: relative;
+  height: 100%;
+    -moz-transition:all 200ms ease-in;
+    -webkit-transition:all 200ms ease-in;
+    -o-transition:all 200ms ease-in;
+    transition:all 200ms ease-in;
+}
+
+/* CSS for display preset name */
+h3 {
+  position: relative;
+  margin-left: 48%;
+}
+
+#presetList {
+  position: relative;
+  height: 90%;
+}
+
+nav{
+    position:absolute;
+    /* overflow:scroll; */
+    top:15%;
+    left:-4.5%;
+    width:150px;
+    height:120%;
+    margin:0 0 0 -250px;
+    -moz-transition:all 200ms ease-in;
+    -webkit-transition:all 200ms ease-in;
+    -o-transition:all 200ms ease-in;
+    transition:all 200ms ease-in;
+}
+
+nav ul::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+nav ul{
+
+    width:100%;
+    height:60%;
+    padding-left:2.8%;
+    margin:0px;
+    list-style:none;
+    background:#222;
+    overflow:scroll;
+}
+
+nav a{
+    color:#fff;
+    font-size: 12px;
+    text-decoration:none;
+    display:block;
+    padding:12px 15px;
+    font-weight:300;
+    letter-spacing:1px;
+    border-bottom:1px solid #333;
+}
+nav a:hover{
+    background:#111;
+}
+label{
+    display:block;
+    font-weight:700;
+    background:#1a8cff;
+    width:20px;
+    height:45px;
+    border-radius: 0px 15px 15px 0px;
+    line-height:42px;
+    color:black;
+    font-size: 14px;
+    text-align:center;
+    line-height:1.1em;
+    position:absolute;
+    top:15%;
+    left:-4%;
+    -moz-transition:all 200ms ease-in;
+    -webkit-transition:all 200ms ease-in;
+    -o-transition:all 200ms ease-in;
+    transition:all 200ms ease-in;
+    z-index:500;
+}
+
+label:hover {
+    opacity: 0.7;
+}
+
+input[type="checkbox"]{
+    display:none;
+}
+input[type="checkbox"]:checked ~ nav{
+    margin:0;
+}
+
+/* how far the preset tab goes out */
+input[type="checkbox"]:checked ~ label{
+    left: 9.7%;
+}
+
+input[type="checkbox"]:checked ~ section{
+    -webkit-transform:translate3d(11%, 0, 0);
+    -moz-transform:translate3d(11%, 0, 0);
+    -o-transform:translate3d(11%, 0, 0);
+    transform:translate3d(11%, 0, 0);
+}
+
+#presetButtons {
+  height: 21px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 100%;
+  background-color: #222;
+  margin-left: 5.4%;
+  max-width: 148px;
+}
+
+.presetBtn{
+  position: relative;
+  float: left;
+  margin: auto;
+  padding-left: 2px;
+  /* padding-right: 1px; */
+  height: 22px;
+  width: 22px;
+}
+
+.presetBtn:hover {
+  opacity: 0.7;
+}
+
+/* CSS for the rename preset popup */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* rename preset content */
+.modal-content {
+  background-color: #343435;
+  margin-top: 15%;
+  margin-left: 30%;
+  padding: 20px 15px 0px 15px;
+  border: 0.5px solid #FFFFFF;
+  width: 40%;
+}
+
+#newPresetName {
+  width:60%;
+}
+
+/* CSS code for the buttons in the rename preset popup */
+#renameDone {
+  display: flex;
+  position: relative;
+  padding-top: 5%;
+  padding-left: 65%;
+}
+
+.renameBtns {
+  display: block;
+  width: 80px;
+  border: none;
+  background-color: #1a8cff;
+  color: white;
+  padding: 3px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.renameBtns:hover{
+      opacity: 0.7;
+}
+
+/* CSS code for the 3 main buttons */
+/* centers buttons */
+.centerbtn {
+  display: flex;
+  position: relative;
+  height: 15%;
+  /*padding-top: 5%;*/
+  justify-content: center;
+}
+
+/* styles the buttons */
+.round {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.round:hover {
+    opacity: 0.7;
+}
+
+/* preview box */
+.preview{
+  border: 1px solid black;
+  width: 80%;
+  left: 10%;
+  top: 5%;
+  align: center;
+  position: relative;
+  background-color: black;
+}
+
+#BGpreview {
+  max-width: 100%;
+  height: auto;
+}
+
+#background {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#addWidget {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#opacityBtn {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#openOverlay {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* The container <div> - needed to position the dropup content */
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropup content (Hidden by Default) */
+.dropup-content {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  background-color: #222;
+  min-width: 100px;
+  max-height: 280px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size: 14px;
+  overflow:scroll;
+  margin-left: -15%;
+}
+
+.dropup-content::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+/* Links inside the dropup */
+.dropup-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropup links on hover */
+.dropup-content a:hover {
+  background: #111;
+}
+
+/* Show the dropup menu on hover */
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+/* Change the background color of the dropup button when the dropup content is shown */
+.dropup:hover .round {
+  opacity: 0.7;
+}
+
+/* Dropup content for widgets (Hidden by Default) */
+#addWidgetList {
+  display: none;
+  position: relative;
+  bottom: 100px;
+  background-color: #222;
+  max-width: 400px;
+  min-height:200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  overflow: scroll;
+}
+
+#addWidgetList::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+/* Change color of widget links on hover */
+#addWidgetList .widgetDesc:hover {
+  background: #111;
+}
+
+/* Show the widget menu on hover */
+.dropup:hover #addWidgetList {
+  display: block;
+}
+
+/* this is used if the Javascript function is used to open the drop-up menus with a click */
+.show {
+  display: block;
+}
+#widgetFlex{
+  display:flex;
+  flex-direction:row;
+}
+.widgetDesc {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 10pt;
+}
+
+.widgetIcon {
+  height: 15vh;
+  display: inline-block;
+}
+
+.widgetIcon img {
+  width: inherit;
+  height: inherit;
+}
+
+/* Dropup content for opacity (Hidden by Default) */
+.dropup-content3 {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  background-color: #222;
+  min-width: 250px;
+  max-height: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size: 14px;
+  overflow:hidden;
+  margin-left: -98%;
+}
+
+.dropup-content3::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+/* Links inside the dropup */
+.dropup-content3 a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropup links on hover */
+.dropup-content3 a:hover {
+  background: #111;
+}
+
+/* Show the dropup menu on hover */
+.dropup:hover .dropup-content3 {
+  display: block;
+}
+
+/* Change the background color of the dropup button when the dropup content is shown */
+.dropup:hover .round {
+  opacity: 0.7;
+}
+
+
+/* CSS for the opacity slider */
+.slidecontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 7%;
+  margin-left: 5%;
+}
+
+/* the slider itsetlf */
+#opacityPercent {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: #eee;
+  outline: none;
+}
+#opacityPercent:hover {
+      opacity: 0.7;
+}
+/* the slider circle */
+#opacityPercent::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #1a8cff;
+  cursor: pointer;
+}
+#opacityPercent::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #1a8cff;
+  cursor: pointer;
+}
+
+output {
+  position: relative;
+  top: -32px;
+  width: 50px;
+  height: 24px;
+  border: 1px solid #e2e2e2;
+  background-color: #fff;
+  border-radius: 3px;
+  color: #777;
+  font-size: .8em;
+  line-height: 24px;
+  text-align: right;
+}
+
+#opacityValue{
+  position: relative;
+  top: -8px;
+  width: 50px;
+  height: 24px;
+  background-color: #222222;
+  border-radius: 3px;
+  color: white;
+  font-size: 12pt;
+  line-height: 24px;
+  text-align: center;
+}

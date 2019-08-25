@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="../css/styleSheetMainApp.css" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+  <meta charset="UTF-8">
+  <title>Kaleidoscope</title>
+</head>
+
+<body>
+  <div id="main-flex">
+    <div id="main">
+      <div class="buffer"></div>
+      <div id="presetList">
+        <div class="wrapper">
+          <input type="checkbox" id="navigation" />
+          <!-- preset tab -->
+          <label for="navigation">
+            <br />|||
+          </label>
+          <!-- list of presets -->
+          <nav>
+            <ul id="presetListItems"></ul>
+            <!-- preset buttons -->
+            <div id="presetButtons">
+              <input type="image" class="presetBtn" id="createPreset" src="../images/createPreset.png" />
+              <input type="image" class="presetBtn" id="renamePreset" src="../images/renamePreset.png" />
+                <!-- the popup -->
+                <div id="myModal" class="modal">
+                  <!-- rename preset pop up content -->
+                  <div class="modal-content">
+                    <span class="close"></span>
+                      Rename Preset:
+                      <input type="text" id="newPresetName" placeholder="Enter preset name"/>
+                      <div id="renameDone">
+                        <table>
+                          <td>
+                            <button type="button" class="renameBtns" id="cancelBtn">Cancel</button>
+                          </td>
+                          <td>
+                            <button type="button" class="renameBtns" id="saveBtn">Save</button>
+                          </td>
+                        </table>
+                        </br />
+                        </br />
+                      </div>
+                  </div>
+                </div>
+              <input type="image" class="presetBtn" id="savePreset" src="../images/savePreset.png" />
+              <input type="image" class="presetBtn" id="duplicatePreset" src="../images/duplicatePreset.png" />
+              <input type="image" class="presetBtn" id="deletePreset" src="../images/deletePreset.png" />
+              <input type="image" class="presetBtn" id="resetPreset" src="../images/resetPreset.png" />
+            </div>
+          </nav>
+          <section>
+            <div id="displayName"></div>
+            <!-- preview box -->
+            <div class="preview">
+              <div id="BGwrapper">
+                <img id="BGpreview" src="">
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- three circular center buttons -->
+    <div id="buttons" class="centerbtn">
+      <!-- background button -->
+      <div id="background">
+        <div class="dropup">
+          <img class="round" src="../images/gameBG.png" />
+          <div class="dropup-content" id="BGList">
+            <a href="#" id="lol">League</a>
+            <a href="#" id="r6siege">Rainbow 6</a>
+            <a href="#" id="csgo">CS:GO</a>
+            <a href="#" id="hearthstone">Hearthstone</a>
+            <a href="#" id="overwatch">Overwatch</a>
+            <a href="#" id="apex">Apex</a>
+            <a href="#" id="fortnite">Fortnite</a>
+            <a href="#" id="dota2">Dota 2</a>
+          </div>
+        </div>
+      </div>
+      <!-- add widget button -->
+      <div id="addWidget">
+        <div class="dropup" <a href="">
+          <img class="round" src="../images/addWidget.png" /></a>
+          <!-- widget menu -->
+          <div class="dropup-content2" id="addWidgetList">
+            <div id="widgetFlex">
+              <!-- notepad icon -->
+              <div class="widgetDesc" id="notepad">
+                <div class="widgetIcon noteIcon noteWidget" id="noteIcon">
+                  <img src="../images/noteIcon.png" />
+                </div>
+                Notepad
+                <br/>
+                <br/>
+              </div>
+              <!-- browser icon -->
+              <div class="widgetDesc" id="browser">
+                <div class="widgetIcon browserIcon browserWidget" id="browserIcon">
+                  <img src="../images/browserIcon.png" />
+                </div>
+                Browser
+                <br/>
+                <br/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="opacityBtn">
+        <div class="dropup">
+          <a href="#"><img class="round" src="../images/opacityBtn.png" alt="opacity"/></a>
+          <div class="dropup-content3" id="opacity">
+            <!-- opacity selection -->
+            <div id="opacity" class="slidecontainer">
+              <input type="range" min="0" max="100" value="50" class="slider" id="opacityPercent" oninput="document.getElementById('opacityValue').innerHTML = this.value" />
+              <label id="opacityValue"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- open overlay button -->
+      <div id="openOverlay">
+        <a href="#"><img class="round" src="../images/openOverlay.png" /></a>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="../js/Controller/Controller.js"></script>
+<script type="text/javascript" src="../js/View/View.js"></script>
+</html>
