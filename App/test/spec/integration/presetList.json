@@ -1,0 +1,20 @@
+{
+  "presets": [
+    {
+      "name": "LoL",
+      "resolution": "1920x1080",
+      "opacity": "0",
+      "gridHeight": "5",
+      "gridWidth": "4",
+      "gameType": "LoL"
+    },
+    {
+      "name": "RainbowSix",
+      "resolution": "1920x1080",
+      "opacity": "0",
+      "gridHeight": "5",
+      "gridWidth": "4",
+      "gameType": "RainbowSix"
+    }
+  ]
+}
