@@ -1,3 +1,6 @@
+# Background
+This application was completed for CS 506-Software Engineering at the University of Wisconsin-Madison in Spring 2019. Contributers include: Matt Patek, Nina Nguyen, Devin Samaranayake, Drew Eklund, and Chamath Gunawardena.
+
 # Getting Started
 Install dependencies by accessing the root folder and running `npm install`. Change to the **App** directory and run `npm install` again. Yes, both of these are necessary. See instructions below for running the **Main App** and the  **Background Process**.
 ****MUST BE USING WINDOWS TO RUN BACKGROUND PROCESS****
