@@ -35,35 +35,35 @@ Document and Planning Document
 
 ### TABLE OF CONTENTS
 
-[SYSTEM ARCHITECTURE](#system-architecture) 3
+[SYSTEM ARCHITECTURE](#system-architecture) 
 
-[OVERVIEW MODEL](#overview-model) 3
+[OVERVIEW MODEL](#overview-model) 
 
-[MAIN APPLICATION MODEL (active MVC)](#main-application-model-active-mvc) 4
+[MAIN APPLICATION MODEL (active MVC)](#main-application-model-active-mvc) 
 
-[OVERLAY (Event-Based)](#overlay-event-based) 5
+[OVERLAY (Event-Based)](#overlay-event-based) 
 
-[DESIGN DETAILS](#design-details) 6
+[DESIGN DETAILS](#design-details) 
 
-[CLASS DIAGRAM](#class-diagram) 6
+[CLASS DIAGRAM](#class-diagram) 
 
-[STATE DIAGRAM](#state-diagram) 6
+[STATE DIAGRAM](#state-diagram) 
 
-[METHOD DESCRIPTIONS](#method-descriptions) 8
+[METHOD DESCRIPTIONS](#method-descriptions) 
 
-[Background Process Class](#background-process-class) 8
+[Background Process Class](#background-process-class) 
 
-[Main App Class](#main-app-class) 9
+[Main App Class](#main-app-class) 
 
-[Preset_Overlay Class](#preset_overlay-class) 9
+[Preset_Overlay Class](#preset_overlay-class) 
 
-[Widget Class](#widget-class) 10
+[Widget Class](#widget-class) 
 
-[External Apps Class](#external-apps-class) 11
+[External Apps Class](#external-apps-class) 
 
-[IMPLEMENTATION PLAN](#implementation-plan) 11
+[IMPLEMENTATION PLAN](#implementation-plan) 
 
-[TESTING PLAN](#testing-plan) 20
+[TESTING PLAN](#testing-plan) 
 
 ###
 
