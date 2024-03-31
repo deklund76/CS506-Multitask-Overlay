@@ -1,5 +1,5 @@
 # Background
-This application was completed for CS 506-Software Engineering at the University of Wisconsin-Madison in Spring 2019. Contributers include: Matt Patek, Nina Nguyen, Devin Samaranayake, Drew Eklund, and Chamath Gunawardena. For more details regarding the design and development of the application see the files in [Design and Planning](Design%20and%20Planning).
+This application was completed for CS 506-Software Engineering at the University of Wisconsin-Madison in Spring 2019. Contributers include: Matt Patek, Nina Nguyen, Devin Samaranayake, Drew Eklund, and Chamath Gunawardena. For more details regarding the design and development of the application see [Design and Planning](Design%20and%20Planning/Design%20and%20Planning.md).
 
 # Getting Started
 Install dependencies by accessing the root folder and running `npm install`. Change to the **App** directory and run `npm install` again. Yes, both of these are necessary. See instructions below for running the **Main App** and the  **Background Process**.
@@ -40,6 +40,8 @@ The reason you have to go through so much to run the background process is becau
 </br>
 
 # Testing
+Testing was originally automated using GitLab following the design outlined below.
+
 Testing will be split into unit tests, integration tests, and system tests. For the **Main App** and **Overlay**, unit testing will utilize Mocha and Chai. Those will use Cucumber features and Chai for integration and system tests. System tests may also utilize Spectron for UI automation. Testing for the **Background Process** is still TBD.
 
 These test should be developed **as features are being developed**. Unit tests should be developed whenever a module is implemented, while integration and system tests can be written proactively. With Cucumber, we can write tests in plain English and they do not need step definitions until we have the ability to run such tests. Because of this, integration and system tests can be written out before the capabilities of those features are even close to done.
