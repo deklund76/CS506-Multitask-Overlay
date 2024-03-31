@@ -1,4 +1,4 @@
-# Kaleidoscope[<img src="Design%20and%20Planning/KOLogo.png">]
+# Kaleidoscope[<img src="KOLogo.png">]
 
 Document and Planning Document
 
